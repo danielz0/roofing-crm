@@ -1,0 +1,13 @@
+node_modules/
+dist/
+cdk.out/
+.turbo/
+coverage/
+.env
+.env.local
+*.log
+apps/api/.data/
+infra/.duckdb-extensions/
+
+# local-only demo notes (not part of the PR)
+docs/DEMO.md
