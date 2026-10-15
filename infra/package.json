@@ -1,0 +1,25 @@
+{
+  "name": "@roofing-crm/infra",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "synth": "cdk synth --quiet",
+    "deploy": "cdk deploy --all",
+    "diff": "cdk diff --all",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint bin lib test",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.220.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@roofing-crm/tsconfig": "workspace:*",
+    "aws-cdk": "^2.1030.0",
+    "esbuild": "^0.25.10",
+    "tsx": "^4.20.6",
+    "vitest": "^3.2.4"
+  }
+}

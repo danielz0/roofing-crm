@@ -1,0 +1,35 @@
+{
+  "name": "@roofing-crm/api-client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./react": {
+      "types": "./src/react.ts",
+      "default": "./src/react.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.0",
+    "@trpc/client": "^11.19.0",
+    "@trpc/react-query": "^11.19.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@roofing-crm/api": "workspace:*",
+    "@roofing-crm/tsconfig": "workspace:*",
+    "@types/react": "^19.2.0",
+    "react": "^19.2.0",
+    "@trpc/server": "^11.19.0"
+  }
+}

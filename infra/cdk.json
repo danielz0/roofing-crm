@@ -1,0 +1,12 @@
+{
+  "app": "npx tsx bin/app.ts",
+  "watch": { "include": ["bin/**", "lib/**"] },
+  "context": {
+    "projectName": "roofing-crm",
+    "dataMode": "view",
+    "llmProvider": "bedrock",
+    "lambdaMemoryMb": 3008,
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/core:target-partitions": ["aws"]
+  }
+}

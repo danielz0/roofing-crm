@@ -1,0 +1,5 @@
+{
+  "extends": "@roofing-crm/tsconfig/base.json",
+  "compilerOptions": { "types": [] },
+  "include": ["src", "test"]
+}

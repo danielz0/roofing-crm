@@ -1,0 +1,5 @@
+{
+  "extends": "@roofing-crm/tsconfig/react.json",
+  "compilerOptions": { "types": ["vite/client", "node"] },
+  "include": ["src", "test", "vite.config.ts"]
+}

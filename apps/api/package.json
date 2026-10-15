@@ -1,0 +1,44 @@
+{
+  "name": "@roofing-crm/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/routers/index.ts",
+      "default": "./src/routers/index.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env src/dev-server.ts",
+    "start": "tsx --env-file-if-exists=../../.env src/dev-server.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint src test scripts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^5.0.115",
+    "@ai-sdk/anthropic": "^4.0.79",
+    "@ai-sdk/openai": "^4.0.93",
+    "@aws-lambda-powertools/logger": "^2.36.0",
+    "@aws-lambda-powertools/metrics": "^2.36.0",
+    "@aws-lambda-powertools/tracer": "^2.36.0",
+    "@aws-sdk/client-dynamodb": "^3.1152.0",
+    "@aws-sdk/credential-providers": "^3.1152.0",
+    "@aws-sdk/lib-dynamodb": "^3.1152.0",
+    "@duckdb/node-api": "1.5.6-r.1",
+    "@roofing-crm/shared": "workspace:*",
+    "@trpc/server": "^11.19.0",
+    "ai": "^7.0.140",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@roofing-crm/tsconfig": "workspace:*",
+    "@types/aws-lambda": "^8.10.155",
+    "aws-sdk-client-mock": "^4.1.0",
+    "tsx": "^4.20.6",
+    "vitest": "^3.2.4",
+    "@trpc/client": "^11.19.0"
+  }
+}
